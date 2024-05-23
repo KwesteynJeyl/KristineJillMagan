@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <link href="./styles5.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Hobbies</h1>
+        <div class="hobby-list">
+            <div class="hobby" onclick="showHobbyDetails('coding')">
+                <h2>Coding</h2>
+                <p>Creating websites and applications.</p>
+            </div>
+            <div class="hobby" onclick="showHobbyDetails('photography')">
+                <h2>Photography</h2>
+                <p>Capturing moments through the lens.</p>
+            </div>
+            <div class="hobby" onclick="showHobbyDetails('hiking')">
+                <h2>Hiking</h2>
+                <p>Exploring nature trails and mountains.</p>
+            </div>
+            <div class="hobby" onclick="showHobbyDetails('reading')">
+                <h2>Reading</h2>
+                <p>Diving into different worlds through books.</p>
+            </div>
+        </div>
+        <div id="hobby-details" class="hobby-details">
+            <h2 id="details-title"></h2>
+            <p id="details-description"></p>
+            <button onclick="closeDetails()">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
